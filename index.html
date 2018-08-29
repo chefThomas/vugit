@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <!-- <script>document.addEventListener('DOMContentLoaded', () => {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });</script> -->
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>vuGit</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="banner">
+            <h2>
+              <span class="card-title white-text text-lighten-5">vuGit</span>
+            </h2>
+          </div>
+          <div class="card-content">
+            <div class="row top-row">
+              <div class="col s4">
+                <div class="adj">Quick</div>
+                <i class="material-icons text-lighten-5">check</i>
+              </div>
+              <div class="col s4">
+                <div class="adj">Simple</div>
+                <i class="material-icons">check</i>
+              </div>
+              <div class="col s4">
+                <div class="adj">Easy</div>
+                <i class="material-icons">check</i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4">
+                <h5> Welcome! </h5>
+                <p>Looking for software developers? vuGit is a simple and easy to use Github client for finding
+                  developers
+                  in your area quickly.</p>
+              </div>
+              <div class="col s0 m6 l4">
+                <!-- empty column for spacing -->
+              </div>
+              <div class="col s12 m6 l4">
+                <h5> Directions </h5>
+                <p>Choose a language, enter a location, and optionally enter a minimum number of repositories</p>
+                <br>
+              </div>
+            </div>
+            <div class="card-action">
+              <div class="row">
+                <form>
+                  <div class="input-field col s12 m6 l4">
+                    <select id="select-language">
+                      <option value="" disabled selected>Choose language</option>
+                      <option value="ActionScript">ActionScript</option>
+                      <option value="C">C</option>
+                      <option value="C%23">C#</option>
+                      <option value="C%2B%2B">C++</option>
+                      <option value="Clojure">Clojure</option>
+                      <option value="CoffeeScript">CoffeeScript</option>
+                      <option value="CSS">CSS</option>
+                      <option value="Go">Go</option>
+                      <option value="Haskell">Haskell</option>
+                      <option value="HTML">HTML</option>
+                      <option value="Java">Java</option>
+                      <option value="JavaScript">JavaScript</option>
+                      <option value="MatLab">MatLab</option>
+                      <option value="Perl">Perl</option>
+                      <option value="PHP">PHP</option>
+                      <option value="Python">Python</option>
+                      <option value="R">R</option>
+                      <option value="Ruby">Ruby</option>
+                    </select>
+                    <label>Programming language</label>
+                  </div>
+                  <div class="input-field col s12 m6 l4">
+                    <input type="text" id="devLocation">
+                    <label for="location">location (minimum of city)</label>
+                  </div>
+                  <div class="input-field col s12 m6 l4">
+                    <input type="number" id="min-repo">
+                    <label for="min-repo">minimum number of repos</label>
+                  </div>
+                </form>
+              </div>
+              <div class="submit-row row">
+                <button class="btn-large waves-effect waves-light submit-button" id="submit-button" type="submit" name="action">Submit
+                  <i class="material-icons right"></i>
+                </button>
+              </div>
+              <div class="results-row row">
+                <div class="card card-result">
+                  <div class="card-content">
+                    <span class="card-title">Username</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action" style="background-color: #84bbc3">
+                    <!-- <div class="card-action" style="background-color: #ff8f86"> -->
+
+                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+                <div class="card card-result">
+                  <div class="card-content">
+                    <span class="card-title">Username</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action" style="background-color: #d6f3a4">
+                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+                <div class="card card-result">
+                  <div class="card-content">
+                    <span class="card-title">Username</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action" style="background-color: #84bbc3">
+                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+                <div class="card card-result">
+                  <div class="card-content">
+                    <span class="card-title">Username</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action" style="background-color: #d6f3a4">
+                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+                <div class="card card-result">
+                  <div class="card-content">
+                    <span class="card-title">Username</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="octocat-parent"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
