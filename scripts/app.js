@@ -1,6 +1,5 @@
-// // Example query
-// // https://api.github.com/search/users?q=language:javascript+location:seattle
 
+// materialize select field
 document.addEventListener('DOMContentLoaded', () => {
   var elems = document.querySelectorAll('select');
   var instances = M.FormSelect.init(elems);
@@ -8,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // UI DOM elements
 const lang = document.getElementById('select-language'); // lang select
-const devLocation = document.getElementById('location'); // location text
-const minRepos = document.getElementById('min-repo'); // min number repo
-const submitButton = document.getElementById('submit-button'); 
+const devLocation = document.getElementById('devLocation'); // location text
+const minimumRepos = document.getElementById('min-repo'); // min number repo
+const submitButton = document.getElementById('submit-button');
 
 // // test
 // console.log (lang.value); 
@@ -19,7 +18,7 @@ const submitButton = document.getElementById('submit-button');
 // // check
 
 // listen for submit button click
-submitButton.addEventListener('click', gitRequest);
+submitButton.addEventListener('click', searchParams);
 
 // // test submit button event listener
 // function testSubmit() {
@@ -27,8 +26,40 @@ submitButton.addEventListener('click', gitRequest);
 // }
 // // check 
 
-// Github class contains methods for 
-const request = new Github;
+// process API requests
+const apiRequest = new Github;
+
+// build UI from github response
+const uiResults = new Ui;
+
+// grab search params from UI
+function searchParams() {
+  let searchLang = lang.value;
+  let devLoc = devLocation.value;
+  let minRepo = minimumRepos.value;
+
+  // test
+  // console.log(searchLang);
+  // console.log(devLoc);
+  // console.log(minRepo);
+  //check
+
+  // validate client request data here with Joi 
+  // make API request
+
+  // 
+  apiRequest.getProfiles(searchLang, devLoc, minRepo)
+    .then(data => {
+
+      uiResults.renderResults(data);
+
+    });
+
+}
+
+
+
+
 
 
 

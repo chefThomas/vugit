@@ -57,7 +57,8 @@
               </div>
               <div class="col s12 m6 l4">
                 <h5> Directions </h5>
-                <p>Choose a language, enter a location, and optionally enter a minimum number of repositories</p>
+                <p>Choose a language, enter a location, and specify a minimum number of repositories. vuGit will do the
+                  rest!</p>
                 <br>
               </div>
             </div>
@@ -103,68 +104,7 @@
                   <i class="material-icons right"></i>
                 </button>
               </div>
-              <div class="results-row row">
-                <div class="card card-result">
-                  <div class="card-content">
-                    <span class="card-title">Username</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                      because
-                      I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action" style="background-color: #84bbc3">
-                    <!-- <div class="card-action" style="background-color: #ff8f86"> -->
-
-                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
-                    <a href="#"></a>
-                  </div>
-                </div>
-                <div class="card card-result">
-                  <div class="card-content">
-                    <span class="card-title">Username</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                      because
-                      I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action" style="background-color: #d6f3a4">
-                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
-                    <a href="#"></a>
-                  </div>
-                </div>
-                <div class="card card-result">
-                  <div class="card-content">
-                    <span class="card-title">Username</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                      because
-                      I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action" style="background-color: #84bbc3">
-                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
-                    <a href="#"></a>
-                  </div>
-                </div>
-                <div class="card card-result">
-                  <div class="card-content">
-                    <span class="card-title">Username</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                      because
-                      I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action" style="background-color: #d6f3a4">
-                    <a href="#"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
-                    <a href="#"></a>
-                  </div>
-                </div>
-                <div class="card card-result">
-                  <div class="card-content">
-                    <span class="card-title">Username</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                      because
-                      I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#" class="octocat-parent"><img src="./images/GitHub-Mark-32px.png" alt="GitHub Octocat icon"></a>
-                  </div>
-                </div>
+              <div id="results" class="results-row row">
               </div>
             </div>
           </div>
@@ -174,6 +114,8 @@
   </div>
   </div>
   </div>
+  <script src="./scripts/github.js"></script>
+  <script src="./scripts/ui.js"></script>
   <script src="./scripts/app.js"></script>
 </body>
 

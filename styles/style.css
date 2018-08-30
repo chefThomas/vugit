@@ -1,5 +1,10 @@
 h2 * {
   padding-left: 20px;
+  font-size: 2em;
+}
+
+.card .card-title {
+  font-size: 1.2em;
 }
 
 .submit-row {
@@ -46,7 +51,8 @@ h2 * {
 }
 
 .card-action {
-  background-color: #f44336
+  background-color: #f44336;
+  vertical-align: bottom;
 }
 
 .results-row {
@@ -65,4 +71,10 @@ h2 * {
 
 #submit-button {
   background-color: #ff3939;
+}
+
+.card.card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
