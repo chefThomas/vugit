@@ -9,21 +9,20 @@ class Ui {
 
     this.resultsDiv.innerHTML = '';
 
+    // for alternating color (I care about design)
     let i = false;
 
+    // loop through results and build cards
     for (let user of userArr) {
-      // test
-      // console.log(user.login); // check
+
       let login = user.login;
-      let repos = user.repos_url;
-      let org = user.organization;
-      let followers = user.followers;
       let gitHubUrl = user.html_url;
       let repoUrl = `https://github.com/${login}?tab=repositories`;
+      // let repos = user.repos_url; // unused 8/31
+      // let org = user.organization; // unsused 8/31
+      // let followers = user.followers; // unused 8/31
 
-      console.log(repoUrl);
-
-      // alternate card color
+      // alternate card base color
       let r, g, b;
 
       if (!i) {
@@ -38,7 +37,7 @@ class Ui {
         i = false;
       }
 
-      // make card
+      // card markup
       let cardHTML = `<div class="card card-result">
       <div class="card-content">
       <span class="card-title">Username<span style="font-weight: 500"> ${login}</span></span>

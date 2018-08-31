@@ -16,11 +16,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
-  <!-- <script>document.addEventListener('DOMContentLoaded', () => {
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems);
-    });</script> -->
-
   <link rel="stylesheet" href="./styles/style.css">
   <title>vuGit</title>
 </head>
@@ -95,11 +90,11 @@
                     <label>Programming language</label>
                   </div>
                   <div class="input-field col s12 m6 l4">
-                    <input type="text" id="devLocation" value="Seattle">
-                    <label for="location">location (minimum of city)</label>
+                    <input type="text" id="devLocation" placeholder="SF">
+                    <label for="location">location</label>
                   </div>
                   <div class="input-field col s12 m6 l4">
-                    <input type="number" id="min-repo" value=1>
+                    <input type="number" id="min-repo" placeholder=1>
                     <label for="min-repo">minimum number of repos</label>
                   </div>
                 </form>
