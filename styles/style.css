@@ -50,11 +50,6 @@ h2 * {
   margin: 5px;
 }
 
-.card-action {
-  background-color: #f44336;
-  vertical-align: bottom;
-}
-
 .results-row {
   padding-top: 20px;
   display: grid;
@@ -73,8 +68,17 @@ h2 * {
   background-color: #ff3939;
 }
 
-.card.card-result {
+.card .card-content {
+  padding: 12px 2px 2px 24px;
+}
+.card .card-result {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.result-card {
+  padding: 24px 24px;
+  display: flex;
+  justify-content: space-evenly;
 }
