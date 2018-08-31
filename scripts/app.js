@@ -1,9 +1,9 @@
 
 // materialize select field
-document.addEventListener('DOMContentLoaded', () => {
-  var elems = document.getElementById('select-language');
-  var instances = M.FormSelect.init(elems);
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   var elems = document.getElementById('select-language');
+//   var instances = M.FormSelect.init(elems);
+// });
 
 // UI DOM elements
 const lang = document.getElementById('select-language'); // lang select
